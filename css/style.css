@@ -1,0 +1,248 @@
+
+*{
+    padding: 0;
+    margin: 0;    
+}
+
+body{
+
+    background-image: linear-gradient(lightblue,white,lightgray);
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+/* ------------ container ------------ */
+.container{
+    padding: 7px;
+    width:380px;
+    margin:0 auto;
+}
+
+/* ------------ header ------------ */
+.header{
+    width: 380px;
+    height:200px;
+    background-image: url('../img/bg1.jpg');
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+
+.clear{
+    width : 30px;
+    height: 30px;
+    position: absolute;
+    right:20px;
+    top: 20px;
+}
+.clear i {
+    font-size: 30px;
+    color: #FFF;
+}
+.clear i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+}
+
+.tooltiptext p{
+    font-size: 18px;
+}
+
+.tooltiptext p1{
+    font-size: 20px;
+    color: blue;
+}
+
+.tooltiptext p2{
+    font-size: 20px;
+}
+
+.tooltiptext p3{
+    font-size: 20px;
+    color: indianred;
+}
+
+.tooltiptext p5{
+    font-size: 20px;
+    color: gray;
+    text-decoration: line-through;
+}
+
+#date{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #FFF;
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* ------------ content ------------ */
+.content{
+    width:380px;
+    height: 350px;
+    max-height:350px;
+    background-color: #fff;
+    word-wrap: break-word;
+    word-break: keep-all;
+    overflow: auto;
+}
+
+.content::-webkit-scrollbar { 
+    display: none; 
+}
+ 
+.content ul{
+    padding:0;
+    margin:0;
+}
+.item{
+    width:380px;
+    max-height: 80px;
+    height: 45px;
+    text-wrap: ;
+    position: relative;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.item i.co{
+    position: absolute;
+    font-size: 25px;
+    padding-left:5px;
+    left:15px;
+    top:10px;
+}
+.item i.co:hover{
+    color: green;
+    cursor: pointer;
+}
+.fa-check-circle{
+    color:#6eb200;
+}
+.fa-plus-circle{
+    cursor: pointer;
+    right:15px;
+}
+.item p.text{
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size: 20px;
+    left:50px;
+    top:5px;
+    background-color: #FFF;
+    max-width:285px;
+}
+.lineThrough{
+    text-decoration: line-through;
+    color : #ccc;
+}
+.item i.de{
+    position: absolute;
+    font-size: 25px;
+    right:15px;
+    top:10px;
+}
+.item i.de:hover{
+    color:#af0000;
+    cursor: pointer;
+}
+
+.item i.ed{
+    position: absolute;
+    font-size: 25px;
+    right:40px;
+    top:10px;
+}
+
+.item i.ed:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+
+/* ------------ add item ------------ */
+.add-to-do{
+    position: relative;
+    width: 360px;
+    height:40px;
+    background-color: #FFF;
+    padding: 10px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+.add-to-do i{
+    position: absolute;
+    font-size: 30px;
+    margin: 5px;
+    color: #4162f6;
+}
+
+.add-to-do input{
+    position: absolute;
+    height: 35px;
+    width: 230px;
+    background-color: #eee;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin: 0px 50px;
+    padding:0px 15px;
+}
+
+
+.add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+}
+.add-to-do input::-moz-placeholder { /* Firefox 19+ */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+}
+.add-to-do input:-ms-input-placeholder { /* IE 10+ */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+}
+.add-to-do input::-moz-placeholder { /* Firefox 18- */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+}
+
+/*tooltip*/
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+button{
+  margin-left: 320px;
+  position: absolute;
+  font-size: 40px;
+    color: #4162f6;
+
+}
